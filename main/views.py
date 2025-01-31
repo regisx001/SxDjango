@@ -11,9 +11,11 @@ def home(request:HttpRequest):
 
 
 def hello_there(request, name):
+    test = 'Hello World'
     now = datetime.now()
     formatted_now = now.strftime("%A, %d %B, %Y at %X")
 
+    test = "Hello Not the workd"
     # Filter the name argument to letters only using regular expressions. URL arguments
     # can contain arbitrary text, so we restrict to safe characters only.
     match_object = re.match("[a-zA-Z]+", name)
